@@ -80,7 +80,7 @@ footer a {
 .social {
   text-decoration: none;
   font-family: "Space Mono", sans-serif;
-  font-size: 11rem;
+  font-size: 12rem;
   font-weight: bolder;
   color: grey;
   line-height: 100%;
@@ -96,13 +96,6 @@ div {
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 1440px) {
-  .social {
-    font-size: 12rem;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .social {
     font-size: 10rem;
