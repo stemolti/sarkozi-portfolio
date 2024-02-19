@@ -56,17 +56,58 @@ footer a {
   align-items: center;
 }
 
-.text {
+.social {
   text-decoration: none;
   font-family: "Space Mono", sans-serif;
   font-size: 11rem;
   font-weight: bolder;
-  color: #0f0f0f;
-  line-height: 175px;
+  color: grey;
+  line-height: 100%;
   overflow: hidden;
   text-transform: uppercase;
+}
+.social:hover {
+  color: black;
 }
 
 div {
   display: flex;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1440px) {
+  .social {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .social {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .social {
+    font-size: 6.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .social {
+    font-size: 2.5rem;
+  }
 }
