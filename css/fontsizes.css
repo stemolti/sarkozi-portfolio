@@ -1,0 +1,86 @@
+/* Define base font size */
+html {
+  font-size: 62.5%; /* This sets 1rem to be 10px */
+}
+
+/* Base font sizes for common elements */
+body {
+  font-size: 1.6rem; /* 16px */
+}
+
+h1 {
+  font-size: 2.4rem; /* 24px */
+}
+
+h2 {
+  font-size: 2rem; /* 20px */
+}
+
+p {
+  font-size: 1.4rem; /* 14px */
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (min-width: 1440px) {
+  /* Adjust font sizes for large desktops */
+  body {
+    font-size: 1.8rem; /* 18px */
+  }
+  h1 {
+    font-size: 3rem; /* 30px */
+  }
+  h2 {
+    font-size: 2.4rem; /* 24px */
+  }
+  p {
+    font-size: 1.6rem; /* 16px */
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+  /* Adjust font sizes for desktops */
+  body {
+    font-size: 1.7rem; /* 17px */
+  }
+  h1 {
+    font-size: 2.8rem; /* 28px */
+  }
+  h2 {
+    font-size: 2.2rem; /* 22px */
+  }
+  p {
+    font-size: 1.5rem; /* 15px */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust font sizes for tablets */
+  body {
+    font-size: 1.5rem; /* 15px */
+  }
+  h1 {
+    font-size: 2.6rem; /* 26px */
+  }
+  h2 {
+    font-size: 2rem; /* 20px */
+  }
+  p {
+    font-size: 1.4rem; /* 14px */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Adjust font sizes for smartphones */
+  body {
+    font-size: 1.4rem; /* 14px */
+  }
+  h1 {
+    font-size: 2.4rem; /* 24px */
+  }
+  h2 {
+    font-size: 1.8rem; /* 18px */
+  }
+  p {
+    font-size: 1.3rem; /* 13px */
+  }
+}

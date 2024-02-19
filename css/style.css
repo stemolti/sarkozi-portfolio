@@ -1,0 +1,85 @@
+/* Reset basic styles and margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Move Hamburger menu on right side */
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Hamburger Emphatic Modified */
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  border-radius: 0px !important;
+}
+
+/* Loading animation*/
+.logo {
+  display: block;
+  position: absolute;
+  top: 40vh;
+  left: calc(50vw - 5vw);
+}
+
+.svg-path-1,
+.svg-path-2,
+.svg-path-3 {
+  fill: rgb(240, 240, 240);
+}
+
+/*TAB LEFT*/
+.tab-left {
+  position: absolute;
+  bottom: calc(50vh - 4.5vh);
+  left: -100%;
+  transform: rotate(-90deg);
+}
+.open-left {
+  left: -1vw;
+}
+
+/*TAB RIGHT*/
+.tab-right {
+  position: absolute;
+  bottom: calc(50vh - 3vh);
+  right: -100%;
+  transform: rotate(-90deg);
+}
+.open-right {
+  right: -3.5vw;
+}
+
+/*TAB BOTTOM*/
+.tab-bottom {
+  position: absolute;
+  left: calc(50vw - 3vw);
+  bottom: -100%;
+}
+.open-bottom {
+  bottom: 2vh;
+}
+
+.tab {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+/* TAB LINKS */
+.tab a {
+  text-decoration: none;
+  color: black;
+}
