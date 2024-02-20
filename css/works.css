@@ -112,17 +112,6 @@ a:focus {
   fill: currentColor;
 }
 
-.arrow-back {
-  background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='22px' viewBox='0 0 32 22' %3E %3Cpath d='M1.301 10.658L11.615.344 14.39 3.12 8.616 8.893H30.73v3.923H8.617l5.773 5.774-2.775 2.774L1.301 11.05a.28.28 0 0 1 0-.392z' stroke='%23000000' stroke-width='1px' fill='none'/%3E %3C/svg%3E")
-    no-repeat 50% 50%;
-  margin: 0;
-  border: 0;
-  grid-area: back;
-  width: 32px;
-  height: 22px;
-  align-self: start;
-}
-
 main {
   position: relative;
   width: 100%;
@@ -184,7 +173,7 @@ main {
 
 .slide {
   width: 100%;
-  height: 50vh;
+  height: 2390px;
   top: 0;
   position: absolute;
   display: grid;
@@ -201,7 +190,7 @@ main {
 .slide__img-wrap {
   grid-area: 1 / 1 / 1 / 1;
   max-width: auto;
-  height: 100%;
+  height: 2390px;
   overflow: hidden;
   position: relative;
   opacity: 0;
@@ -211,7 +200,7 @@ main {
 /*RESIZE IMAGE*/
 .slide__img {
   width: auto;
-  height: 100%;
+  height: 2390px;
   left: 0;
   top: 0;
   background-size: calc(50%);
@@ -221,6 +210,15 @@ main {
   backface-visibility: hidden;
   pointer-events: none;
 }
+
+.slide__img__01{
+  background-size: calc(32%) !important;
+}
+
+.slide__img__02{
+  background-size: calc(45%) !important;
+}
+
 
 .slide__img::after {
   content: "";
@@ -244,7 +242,7 @@ main {
 }
 
 .slide__number {
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   font-weight: 200;
   position: absolute;
   bottom: 3rem;
@@ -254,10 +252,10 @@ main {
 .slide__title {
   margin: 0;
   grid-area: 1 / 1 / 1 / 1;
-  font-size: 2vw;
+  font-size: 2.5rem;
   color: var(--color-title);
   position: relative;
-  bottom: -24rem;
+  bottom: -22rem; /* Distanza del titolo dal fondale*/
   margin-bottom: 1.25rem;
   opacity: 0;
 }
@@ -351,9 +349,10 @@ main {
   transform: translateX(-50%) rotate(180deg);
 }
 
-@media screen and (min-width: 53em) {
+@media screen and (min-width: 20em) {
   body {
     padding: 0;
+    margin: 0;
   }
   .content {
     position: relative;
@@ -416,12 +415,9 @@ main {
   .slide__img {
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
-    background-size: calc(30%);
+    background-size: calc(40%);
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    position: absolute;
     backface-visibility: hidden;
     pointer-events: none;
   }
