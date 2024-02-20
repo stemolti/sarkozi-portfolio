@@ -8,6 +8,7 @@
 
 body {
   overflow: hidden;
+  background: url("img/bg.png");
 }
 
 /* Move Hamburger menu on right side */
