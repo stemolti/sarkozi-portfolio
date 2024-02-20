@@ -254,7 +254,7 @@ main {
   font-size: 2.5rem;
   color: var(--color-title);
   position: relative;
-  bottom: -17rem; /* Distanza del titolo dal fondale*/
+  bottom: -20rem; /* Distanza del titolo dal fondale*/
   margin-bottom: 1.25rem;
   opacity: 0;
 }
