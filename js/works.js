@@ -2,7 +2,7 @@
   // The Slide class.
   class Slide {
     constructor(el) {
-      this.DOM = { el: el };
+      this.DOM = { el: el }; //l'elemento html
       // The image conteiner.
       this.DOM.imgWrap = this.DOM.el.querySelector('.slide__img-wrap');
       // The revealer element (the element with the same color of the body that covers the image).

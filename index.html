@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>sarkozi</title>
 
+  <!-- JavaScrpit per la manipolazione del DOM per rendere interattivo il sito e gestire il Menu Button-->
   <script src="js/main.js"></script>
 
   <!-- Google Fonts -->
@@ -19,13 +20,15 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/fontsizes.css" rel="stylesheet" type="text/css" />
 
-  <!-- GSAP3 Library -->
+  <!-- GSAP3 Library
+ GSAP l'ho usato per spostare il logo verso l'alto
+  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
 </head>
 
-<body class="loading">
-  <div class="container-navigation">
+<body>
+  <div >
     <!-- Hamburger Button -->
     <button class="hamburger hamburger--emphatic" type="button" id="menu-button">
       <span class="hamburger-box">
@@ -51,6 +54,7 @@
     <path d="m88.46,72.82c2.52,0,2.53-3.92,0-3.92s-2.53,3.92,0,3.92h0Z" class="svg-path-3"></path>
   </svg>
   <!-- Anime.js File for SVG Morph and clip-path -->
+  <!--      Ho usato Anime.js per fare il preloading del sito utilizzando l'SVG del mio logo-->
   <script src="js/anime.min.js"></script>
 </body>
 

@@ -9,6 +9,7 @@
 body {
   overflow: hidden;
   background: url("img/bg.png");
+  z-index: 3;
 }
 
 /* Move Hamburger menu on right side */
